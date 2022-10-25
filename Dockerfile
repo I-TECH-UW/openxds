@@ -3,11 +3,11 @@
 #
 #
 
-FROM uwitech/ohie-base
+FROM adoptopenjdk/openjdk8:latest
 
 # Install dependencies
 RUN apt-get update && \
-apt-get install -y git build-essential curl wget software-properties-common openjdk-7-jre
+apt-get install -y git build-essential curl wget software-properties-common 
 
 # Install dockerize
 ENV DOCKERIZE_VERSION v0.2.0
