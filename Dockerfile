@@ -3,7 +3,7 @@
 #
 #
 
-FROM adoptopenjdk/openjdk8:latest
+FROM adoptopenjdk/openjdk7:latest
 
 # Install dependencies
 RUN apt-get update && \
